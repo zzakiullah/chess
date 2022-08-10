@@ -1,5 +1,4 @@
-[submodule "Stockfish"]
-    path = engine/Stockfish
-    url = https://github.com/official-stockfish/Stockfish
-    branch = sf_15
-    
+[submodule "engine/Stockfish"]
+	path = engine/Stockfish
+	url = git@github.com:official-stockfish/Stockfish.git
+

@@ -1,0 +1,5 @@
+[submodule "Stockfish"]
+    path = engine/Stockfish
+    url = https://github.com/official-stockfish/Stockfish
+    branch = sf_15
+    

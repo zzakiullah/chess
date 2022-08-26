@@ -10,7 +10,9 @@ class Window extends JFrame implements ActionListener, KeyListener {
 
     Timer timer;
 
-    ChessBoard chessBoard;
+    HomeScreen homeScreen;
+    MenuScreen menuScreen;
+    MainScreen mainScreen;
 
     public Window() {
         super("Chess Trainer");
@@ -21,7 +23,9 @@ class Window extends JFrame implements ActionListener, KeyListener {
 
         setSize(width, height);
 
-        chessBoard = new ChessBoard();
+        homeScreen = new HomeScreen();
+        menuScreen = new MenuScreen();
+        mainScreen = new MainScreen();
 
         timer = new Timer(10, this);
         timer.start();

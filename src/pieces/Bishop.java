@@ -1,7 +1,5 @@
-package pieces;
-
 public class Bishop extends ChessPiece {
-    public Bishop() {
-        super();
+    public Bishop(int colour) {
+        super(colour);
     }
 }

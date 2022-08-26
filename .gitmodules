@@ -1,4 +1,4 @@
 [submodule "engine/Stockfish"]
-	path = engine/Stockfish
+	path = src/engine/Stockfish
 	url = git@github.com:official-stockfish/Stockfish.git
 

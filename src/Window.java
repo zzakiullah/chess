@@ -8,7 +8,9 @@ class Window extends JFrame implements ActionListener, KeyListener {
 
     int width, height;
 
-    Timer myTimer;
+    Timer timer;
+
+    ChessBoard chessBoard;
 
     public Window() {
         super("Chess Trainer");
@@ -19,18 +21,26 @@ class Window extends JFrame implements ActionListener, KeyListener {
 
         setSize(width, height);
 
-        myTimer = new Timer(10, this);
-        myTimer.start();
+        chessBoard = new ChessBoard();
+
+        timer = new Timer(10, this);
+        timer.start();
 
         addKeyListener(this);
         requestFocus();
         setLocationRelativeTo(null);
         setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
-        setResizable(false);
+        setResizable(true);
         setVisible(true);
     }
 
-    public void actionPerformed(ActionEvent e) {}
+    public void actionPerformed(ActionEvent e) {
+        Object source = e.getSource();
+
+        if (source == timer) {
+
+        }
+    }
 
     public void keyTyped(KeyEvent e) {}
     public void keyPressed(KeyEvent e) {}

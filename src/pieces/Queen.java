@@ -1,7 +1,5 @@
-package pieces;
-
 public class Queen extends ChessPiece {
-    public Queen() {
-        super();
+    public Queen(int colour) {
+        super(colour);
     }
 }
